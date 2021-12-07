@@ -66,8 +66,7 @@ def show(**kwargs):
         elif key == 'freq_current':
             my_table.add_row(["freq_current", value])
         else:
-            my_table.add_row([f"freq {i} core", value])
-            i += 1
+            my_table.add_row([key, value])
     for key in kwargs["disk_usage"]:
         my_table.add_row([key, kwargs["disk_usage"][key]])
     for key in kwargs["network_info"]:
