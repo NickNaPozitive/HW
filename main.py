@@ -4,6 +4,9 @@ import datetime
 from collections import namedtuple as nt
 
 
+# pprint(datetime.datetime.fromtimestamp(pu.boot_time()).strftime("%Y-%m-%d %H:%M:%S"))
+
+
 def get_cpu():
     counter_cpu = pu.cpu_count(logical=True)
     return counter_cpu
